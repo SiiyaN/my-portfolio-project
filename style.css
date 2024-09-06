@@ -1,0 +1,16 @@
+h1 {
+  font-family: "Bakbak One", sans-serif;
+  display: flex;
+}
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
