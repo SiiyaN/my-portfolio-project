@@ -1,16 +1,41 @@
+:root {
+  --primary-colour: #f2e8dc;
+  --secondary-colour: #928473;
+}
 h1 {
   font-family: "Bakbak One", sans-serif;
-  display: flex;
+  line-height: 7px;
+  padding: 15px;
+  font-weight: 600;
 }
-h2 {
+h2,
+h3 {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 700;
   font-style: normal;
+}
+
+h3 {
+  font-weight: normal;
+  padding-bottom: 20px;
 }
 p {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.hero {
+  background: var(--primary-colour);
+  text-align: center;
+  padding: 170px 0;
+}
+
+.btn-primary {
+  background: var(--secondary-colour);
+  border-radius: 3px;
+  color: white;
+  padding: 12px 30px;
+  border: black;
 }
