@@ -1,6 +1,6 @@
 :root {
   --primary-colour: #f2e8dc;
-  --secondary-colour: #928473;
+  --secondary-colour: #b8a17f;
 }
 h1 {
   font-family: "Bakbak One", sans-serif;
@@ -30,12 +30,12 @@ p {
   background: var(--primary-colour);
   text-align: center;
   padding: 170px 0;
+  margin: 15px 0;
 }
 
-.btn-primary {
-  background: var(--secondary-colour);
-  border-radius: 3px;
-  color: white;
-  padding: 12px 30px;
-  border: black;
+.btn-outline-dark {
+  border: 2px solid var(--secondary-colour);
+  --bs-btn-hover-color: White;
+  --bs-btn-hover-bg: var(--secondary-colour);
+  --bs-btn-hover-border-color: var(--primary-colour);
 }
