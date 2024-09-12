@@ -2,6 +2,9 @@
   --primary-colour: #f0e9e1;
   --secondary-colour: #b8a17f;
 }
+
+@media (max-width: 900px) {
+}
 h1 {
   font-family: "Bakbak One", sans-serif;
   line-height: 7px;
@@ -38,4 +41,18 @@ p {
   --bs-btn-hover-color: White;
   --bs-btn-hover-bg: var(--secondary-colour);
   --bs-btn-hover-border-color: var(--primary-colour);
+}
+.about {
+  background: var(--primary-colour);
+  text-align: center;
+  margin: 15px 0;
+}
+
+.about-paragraphs {
+  border: 3px solid var(--secondary-colour);
+  border-radius: 8px;
+  display: flex;
+  padding: 100px 50px;
+  width: 50%;
+  margin: 0 auto;
 }
