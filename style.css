@@ -60,3 +60,27 @@ p {
 .nav-item :hover {
   color: var(--secondary-colour);
 }
+
+footer .social-links a {
+  margin: 10px 25px;
+  color: var(--secondary-colour);
+  background: var(--primary-colour);
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--secondary-colour);
+}
+
+footer .email-link:hover {
+  color: var(--secondary-colour);
+}
