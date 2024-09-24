@@ -29,7 +29,8 @@ p {
   font-style: normal;
 }
 
-.hero {
+.hero,
+.contact-content {
   background: var(--primary-colour);
   text-align: center;
   padding: 170px 0;
@@ -42,6 +43,24 @@ p {
   --bs-btn-hover-bg: var(--secondary-colour);
   --bs-btn-hover-border-color: var(--primary-colour);
 }
+
+.btn-branding {
+  background: var(--secondary-colour);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.btn-branding:hover {
+  background-color: var(--secondary-colour);
+  color: white;
+  border-color: black;
+}
+
 .about {
   background: var(--primary-colour);
   text-align: center;
