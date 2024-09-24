@@ -3,7 +3,11 @@
   --secondary-colour: #b8a17f;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .about-paragraphs {
+    font-size: 1rem; /* Slightly smaller font for better mobile readability */
+    padding: 4%; /* More padding on smaller screens */
+  }
 }
 h1 {
   font-family: "Bakbak One", sans-serif;
@@ -11,6 +15,7 @@ h1 {
   padding: 15px;
   font-weight: 600;
 }
+
 h2,
 h3 {
   font-family: "Roboto Mono", monospace;
@@ -72,8 +77,9 @@ p {
   border-radius: 8px;
   display: flex;
   padding: 100px 50px;
-  width: 50%;
+  max-width: 100%;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .nav-item :hover {
