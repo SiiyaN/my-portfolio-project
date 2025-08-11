@@ -1,19 +1,16 @@
 :root {
   --primary-colour: #f0e9e1;
   --secondary-colour: #b8a17f;
+  --accent-colour: #8c6a4f;
+  --text-dark: #222;
 }
 
-@media (max-width: 768px) {
-  .about-paragraphs {
-    font-size: 1rem; /* Slightly smaller font for better mobile readability */
-    padding: 4%; /* More padding on smaller screens */
-  }
-}
 h1 {
   font-family: "Bakbak One", sans-serif;
-  line-height: 7px;
-  padding: 15px;
-  font-weight: 600;
+  line-height: 1.2;
+  padding: 15px 0;
+  font-weight: 700;
+  color: var(--text-dark);
 }
 
 h2,
@@ -26,12 +23,13 @@ h3 {
 h3 {
   font-weight: normal;
   padding-bottom: 20px;
+  color: var(--text-dark);
 }
+
 p {
   font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  color: var(--text-dark);
 }
 
 .hero,
@@ -40,30 +38,6 @@ p {
   text-align: center;
   padding: 170px 0;
   margin: 15px 0;
-}
-
-.btn-outline-dark {
-  border: 2px solid var(--secondary-colour);
-  --bs-btn-hover-color: White;
-  --bs-btn-hover-bg: var(--secondary-colour);
-  --bs-btn-hover-border-color: var(--primary-colour);
-}
-
-.btn-branding {
-  background: var(--secondary-colour);
-  border-radius: 4px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  cursor: pointer;
-}
-
-.btn-branding:hover {
-  background-color: var(--secondary-colour);
-  color: white;
-  border-color: black;
 }
 
 .about {
@@ -77,33 +51,104 @@ p {
   border-radius: 8px;
   display: flex;
   padding: 100px 50px;
-  max-width: 100%;
   margin: 0 auto;
   max-width: 100%;
+  background: white;
 }
 
-.nav-item :hover {
+@media (max-width: 768px) {
+  .about-paragraphs {
+    font-size: 14px;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+.btn-outline-dark,
+.btn-branding {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--secondary-colour);
+  color: var(--text-dark);
+}
+
+.btn-outline-dark:hover {
+  color: white;
+  background: var(--secondary-colour);
+  border-color: var(--secondary-colour);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-branding {
+  background: var(--secondary-colour);
+  color: white;
+}
+
+.btn-branding:hover {
+  background-color: var(--accent-colour);
+  color: white;
+  border-color: var(--accent-colour);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
   color: var(--secondary-colour);
+  border-bottom: 2px solid var(--secondary-colour);
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.bg-info-subtle {
+  background: var(--primary-colour) !important;
+  border-left: 4px solid var(--secondary-colour);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+footer {
+  background: var(--primary-colour);
+  padding: 20px 0;
+  text-align: center;
 }
 
 footer .social-links a {
-  margin: 10px 25px;
+  margin: 0 15px;
   color: var(--secondary-colour);
-  background: var(--primary-colour);
+  background: white;
   padding: 10px 15px;
   border-radius: 50%;
   font-size: 18px;
-  transition: all 100ms ease-in-out;
-}
-footer .email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
+  transition: all 0.3s ease-in-out;
 }
 
 footer .social-links a:hover {
   color: white;
   background: var(--secondary-colour);
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 24px;
 }
 
 footer .email-link:hover {
